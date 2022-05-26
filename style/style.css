@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  height: 250px;
+  align-content: space-evenly;
+  color: white;
+  margin-top: 260px;
+}
+
+.screen-inner {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  align-items: flex-end;
+}
+.start-button {
+  text-align: center;
+  width: 200px;
+  border-radius: 190px;
+  height: 50px;
+  font-size: xx-large;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  letter-spacing: 4px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  padding-top: 25px;
+  background-position: center;
+  height: 100%;
+}
+
+.initialBackground {
+  background-image: url("../image/grand-quiz.png");
+}
+
+.questionsBackground {
+  background-image: url("../image/secondFrame.jpg");
+}
+
+h1 {
+  color: blueviolet;
+  text-align: center;
+  margin-right: 120px;
+}
+
+.choice-container {
+  flex-basis: 50%;
+  cursor: pointer;
+  min-height: 50px;
+  min-width: 100px;
+  background-color: lightblue;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  border-radius: 30px;
+  width: 10px;
+  padding: 0 15px;
+}
+.choice-text {
+  /* border-radius: 10px; */
+}
+
+#question {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+}
+#finish-button {
+  color: red;
+  cursor: pointer;
+  border: 2px solid red;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background-color: transparent;
+}
+
+#score-container {
+  font-size: 20px;
+}
+.score-points {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+.popup {
+  color: white;
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+}
+h1 {
+  color: white;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.wrapper-title {
+  text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18rem;
+}
+.popup p {
+  font-size: 4rem;
+  margin: 0;
+}
