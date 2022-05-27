@@ -155,20 +155,19 @@ function displayPopup() {
   answerContainer.classList.add("hidden")
 
   const displayedMessage = displayFinalResult()
-  // je montre la popup
-  popup.classList.toggle("hidden")
-  // je lui ajoute un titre
-  const h2 = document.createElement("h2")
+
+  // add a title
+  const h2 = popup.querySelector("h2")
   h2.textContent = displayedMessage.title
-  popup.append(h2)
-  // je lui ajoute une image
-  const imgGiff = new Image()
+  // add an image
+  const imgGiff = popup.querySelector("img")
   imgGiff.src = displayedMessage.image
-  popup.append(imgGiff)
-  // je lui ajoute score
-  const displayScore = document.createElement("p")
+  // add score
+  const displayScore = popup.querySelector("p")
   displayScore.textContent = `your score is ${points}`
-  popup.append(displayScore)
+
+  // show pop up
+  popup.classList.remove("hidden")
 }
 
 function showCurrentQuestion() {
