@@ -13,8 +13,10 @@ body {
   flex-wrap: wrap;
   height: 250px;
   align-content: space-evenly;
-  color: white;
+  color: black;
   margin-top: 260px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .screen-inner {
@@ -78,9 +80,8 @@ h1 {
   border-radius: 30px;
   width: 10px;
   padding: 0 15px;
-}
-.choice-text {
-  /* border-radius: 10px; */
+  border: 1px solid;
+  box-shadow: 1px 5px rosybrown;
 }
 
 #question {

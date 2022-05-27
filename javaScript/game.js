@@ -85,32 +85,32 @@ let scoreDisplaySpan = document.querySelector("#score-container span")
 let pictureEndQuiz = null
 let scoreMessage = [
   {
-    title: "see you later Ronnie Pickering",
-    image: "https://i1.sndcdn.com/avatars-000187277980-rst4ot-t240x240.jpg",
+    title: "Are you lost?",
+    image: "https://c.tenor.com/5R1whvx7pOkAAAAC/lost-johntravolta.gif",
   },
 
   {
-    title: "not bad at all",
-    image: "https://c.tenor.com/cj5Xkx88WbUAAAAC/soso-notbad.gif",
+    title: "You are almost there!",
+    image:
+      "https://c.tenor.com/rHoMGmD3jhMAAAAC/leonardo-dicaprio-leo-dicaprio.gif",
   },
   {
-    title: "impressive, you must be a web dev",
-    image: "https://media4.giphy.com/media/COITV6uITjLchuwh43/giphy.gif",
+    title: "impressive, you must be a web dev...",
+    image: "https://media0.giphy.com/media/wACPZdg6nX52o/giphy.gif",
   },
 ]
 let finalResult = 0
 
 function displayFinalResult() {
   let message = ""
-  if (points >= 8) {
+  if (points >= 16) {
     message = scoreMessage[2]
-  } else if (points < 8 && points >= 5) {
+  } else if (points < 15 && points >= 5) {
     message = scoreMessage[1]
   } else {
     message = scoreMessage[0]
   }
-  console.log(finalResult, "finalResult")
-  console.log(scoreMessage[finalResult], "scoreMessage")
+
   return message
   // display the message in textContent of some element
 
@@ -149,9 +149,9 @@ function createInterval() {
 }
 
 function displayPopup() {
-  // stop the progress bar
+  // stop the progress b
   clearInterval(progressBarInterval)
-  // cacher les 4 reponses avec de la do; ;anipulation
+  // hidding answers section at the end of the quiz
   answerContainer.classList.add("hidden")
 
   const displayedMessage = displayFinalResult()
